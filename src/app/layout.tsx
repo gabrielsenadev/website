@@ -1,5 +1,7 @@
-import './globals.css'
-import { Roboto_Slab } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+import { Roboto_Slab } from 'next/font/google';
+
+import './globals.css';
 const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
   weight: ['400'],
@@ -28,7 +30,10 @@ export default function RootLayout({
         dark:text-slate-50
         bg-light
         dark:bg-dark`}
-      >{children}</body>
+      >
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
