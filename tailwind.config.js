@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'dark': "url('../../public/microcarbon-bg-dark.svg')",
+        'light': "url('../../public/microcarbon-bg-light.svg')",
+      },
+      fontFamily: {
+        'sans': ['var(--font-primary)', 'sans-serif'],
       },
     },
   },
