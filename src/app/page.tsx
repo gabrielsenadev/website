@@ -1,7 +1,15 @@
+import { Header } from './components/Header';
+import { Welcome } from './components/Welcome';
+
 export default function Page() {
   return (
-    <main className='flex justify-center items-center h-full'>
-      <h1 className='font-sans text-5xl text-slate-100'>Hello world!</h1>
-    </main>
+    <div>
+      <Header
+        logoSrc='https://github.com/gabrielsenadev.png'
+        username='Gabriel Sena'
+        title='Software Engineer'
+      />
+      <Welcome data-testid="welcome-home"/>
+    </div>
   )
 }

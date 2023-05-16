@@ -6,11 +6,14 @@ const createJestConfig = nextJest({ dir: './' });
 // Any custom config you want to pass to Jest
 const customJestConfig = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/{!(layout)}*.{ts,tsx}'],
+  collectCoverageFrom: [
+    'src/**/*.{ts,tsx}',
+    '!src/app/**/layout.tsx'
+  ],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
+  coverageProvider: 'v8',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  coveragePathIgnorePatterns : ['*\\.layout.tsx'],
 };
  
 // createJestConfig is exported in this way to ensure that next/jest can load the Next.js configuration, which is async

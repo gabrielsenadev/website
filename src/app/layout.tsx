@@ -4,14 +4,14 @@ import { Roboto_Slab } from 'next/font/google';
 import './globals.css';
 const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '700'],
   variable: '--font-primary',
   display: 'swap',
 });
 
 export const metadata = {
-  title: 'Gabriel Sena',
-  description: 'Personal website',
+  title: 'Gabriel Sena | Software Engineer',
+  description: 'In this space, I will share my experiments and discoveries, developing skills and experimenting with new ideas while enjoying the process.',
 }
 
 export default function RootLayout({
@@ -23,13 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${robotoSlab.variable}`}>
       <body
-        className={`
-        bg-gray-900
-        dark:bg-slate-100
-        text-gray-900 
-        dark:text-slate-50
-        bg-light
-        dark:bg-dark`}
+        className={`bg-gray-900 text-slate-50 bg-dark box-border flex flex-col items-center justify-center h-screen p-2`}
       >
         {children}
         <Analytics />
