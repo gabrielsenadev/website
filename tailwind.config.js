@@ -8,12 +8,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'dark': "url('../../public/microcarbon-bg-dark.svg')",
-        'light': "url('../../public/microcarbon-bg-light.svg')",
+        'dark': "url('../../public/microcarbon-bg-dark.png')",
+        'light': "url('../../public/microcarbon-bg-light.png')",
       },
       fontFamily: {
         'sans': ['var(--font-primary)', 'sans-serif'],
       },
+      fontSize: {
+        '6.5xl': '3.25rem'
+      }
     },
   },
   plugins: [],

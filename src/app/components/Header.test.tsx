@@ -1,12 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import Page from './page';
+import { Header } from './Header';
 
-describe('Homepage', () => {
+describe('Header', () => {
   it('should render', () => {
-    render(<Page />);
+    render(<Header username='Kitten' title='Catdeveloper' logoSrc='http://placekitten.com/100/100' />);
     const header = screen.getByTestId('app-header');
     expect(header).toBeInTheDocument();
-    const welcome = screen.getByTestId('welcome');
-    expect(welcome).toBeInTheDocument();
   });
 });
