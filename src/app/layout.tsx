@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { Roboto_Slab } from 'next/font/google';
 
 import './globals.css';
+import { WELCOME } from '@/consts';
 const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -11,7 +12,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata = {
   title: 'Gabriel Sena | Software Engineer',
-  description: 'In this space, I will share my experiments and discoveries, developing skills and experimenting with new ideas while enjoying the process.',
+  description: WELCOME,
 }
 
 export default function RootLayout({
