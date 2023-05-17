@@ -19,7 +19,7 @@ export function NavLink({ label, href, icon }: NavLinkProps) {
       data-testid="nav-link"
     >
       { icon && cloneElement(icon, {
-        className: 'text-sky-300 w-6 h-6 group-hover/item:text-sky-500 group-hover/item:scale-125 ease-in duration-150',
+        className: 'text-sky-300 w-5 h-4 group-hover/item:text-sky-500 group-hover/item:scale-125 ease-in duration-150',
         "data-testid": "nav-link-icon"
       }) }
       <span className='text-sm'>{ label }</span>

@@ -2,7 +2,8 @@ import { HighlightText } from '@/components/HighlightText';
 import { NavLinkType } from '@/components/NavLink';
 import { Navbar } from '@/components/Navbar';
 import Link from 'next/link';
-import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const NAVLINKS: NavLinkType[] = [
   {
@@ -13,19 +14,20 @@ const NAVLINKS: NavLinkType[] = [
   {
     href: 'https://www.linkedin.com/in/gabrielsenadev',
     label: 'LinkedIn',
-    icon: <AiFillLinkedin />
+    icon: <FaLinkedinIn />
   }
 ]
+
+const WELCOME_MESSAGE = "Here, I'll be testing out some cool things, doing great stuff while learning, and sharing the results with you. If you'd like to get in touch, feel free to send me an email! Looking forward to connecting with you!";
 
 export function Welcome() {
   return (
     <main data-testid="welcome">
-      <HighlightText as='h1' className='text-6.5xl font-bold text-sky-500 highlight-text cursor-pointer mt-5 mb-5' text='Hi! Welcome to my place! 👋' highlightClassName='hover:text-sky-100'/>
-      <p className='max-w-prose'>In this space, I will share my experiments and discoveries, developing skills and experimenting with new ideas while enjoying the process.</p>
-      <p>If you would like to talk to me, please send me an email!</p>
+      <HighlightText as='h1' className='text-6.5xl font-bold text-sky-500 cursor-pointer mt-5 mb-1' text='Hi! Welcome to my space! 👋' highlightClassName='hover:text-sky-100'/>
+      <p className='max-w-prose'>{WELCOME_MESSAGE}</p>
       <Navbar links={NAVLINKS} className='my-4'/>
-      <Link className='text-sky-400 hover:text-sky-100' href='mailto:hello@gabrielsena.dev'>
-        hello@gabrielsena.dev
+      <Link className='text-sky-40 underline underline-offset-4' href='mailto:hello@gabrielsena.dev'>
+        <HighlightText as='span' text='Get in touch: hello@gabrielsena.dev' highlightClassName='hover:text-sky-100' className='font-bold text-sky-500 cursor-pointer'/>
       </Link>
     </main>
   )
