@@ -22,7 +22,7 @@ const NAVLINKS: NavLinkType[] = [
 export function Welcome() {
   return (
     <main data-testid="welcome">
-      <HighlightText as='h1' className='text-6.5xl font-bold text-sky-500 cursor-pointer mt-5 mb-1' text='Hi! Welcome to my space! 👋' highlightClassName='hover:text-sky-100'/>
+      <HighlightText as='h1' className='text-4xl sm:text-6.5xl font-bold text-sky-500 cursor-pointer mt-5 mb-4' text='Hi! Welcome to my space! 👋' highlightClassName='hover:text-sky-100'/>
       <p className='max-w-prose'>{WELCOME_FULL}</p>
       <Navbar links={NAVLINKS} className='my-4'/>
       <Link className='text-sky-40 underline underline-offset-4' href='mailto:hello@gabrielsena.dev'>
