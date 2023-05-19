@@ -26,7 +26,7 @@ export function Header({ username, title, logoSrc }: HeaderProps) {
       />
       <div className='flex flex-col' >
         <HighlightText as='h2' className='text-2xl font-bold text-sky-400 cursor-default' text={username} highlightClassName='hover:text-sky-200' />
-        <p className='text-base  dark:text-slate-50 text-gray-900 mb-2.5'>{title}</p>
+        <p className='text-base text-slate-50 mb-2.5'>{title}</p>
         <Navbar
           links={NAVLINKS}
         />
