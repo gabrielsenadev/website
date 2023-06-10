@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     description: "Welcome to my portfolio and testing place! I'm Gabriel Sena, a Software Engineer. Explore a collection of projects and experiments crafted by me, showcasing my skills and expertise in software engineering.",
     siteName: 'Portfolio and Experimental Place',
     images: [{
-      url: 'https://res.cloudinary.com/gabes/image/upload/v1686424783/og.jpg',
+      url: 'https://res.cloudinary.com/gabes/image/upload/v1686425532/og_oqdawj.jpg',
     }]
   },
   twitter: {
     card: 'summary_large_image',
     site: 'https://gabrielsena.dev',
     creator: 'Gabriel Sena',
-    images: 'https://res.cloudinary.com/gabes/image/upload/v1686424783/og.jpg',
+    images: 'https://res.cloudinary.com/gabes/image/upload/v1686425532/og_oqdawj.jpg',
     description: "Welcome to my portfolio and testing place! I'm Gabriel Sena, a Software Engineer. Explore a collection of projects and experiments crafted by me, showcasing my skills and expertise in software engineering.",
     title: 'Gabriel Sena | Software Engineer',
   }
