@@ -9,7 +9,7 @@ const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-primary',
-  display: 'auto',
+  display: 'swap',
 });
 
 export const metadata = {
