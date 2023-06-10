@@ -19,7 +19,7 @@ export function NavLink({ label, href, icon, target }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={`inline-flex font-bold uppercase text-1xl tracking-[0.29em] transition ease-in duration-200 flex-row gap-1.5 items-center justify-start group/item hover:text-blue ${isActiveLink && 'text-blue'}`}
+      className={`inline-flex font-bold uppercase text-1xl tracking-2x transition ease-in duration-200 flex-row gap-1.5 items-center justify-start group/item hover:text-blue ${isActiveLink && 'text-blue'}`}
       target={target}
     >
       { icon && cloneElement(icon, {

@@ -19,6 +19,10 @@ module.exports = {
         'whtie': '#ffffff',
         'blue': '#4299E1',
       },
+      letterSpacing: {
+        '1x': '0.145rem',
+        '2x': '0.29rem'
+      },
     },
   },
   plugins: [],
