@@ -1,2 +1,0 @@
-export const WELCOME = "Here, I'll be testing out some cool things, doing great stuff while learning, and sharing the results with you."
-export const WELCOME_FULL = "Here, I'll be testing out some cool things, doing great stuff while learning, and sharing the results with you. If you'd like to get in touch, feel free to send me an email! Looking forward to connecting with you!"

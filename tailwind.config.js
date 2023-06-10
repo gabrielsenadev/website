@@ -7,16 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'dark': "url('../../public/microcarbon-bg-dark.png')",
-        'light': "url('../../public/microcarbon-bg-light.png')",
-      },
       fontFamily: {
-        'sans': ['var(--font-primary)', 'sans-serif'],
+        'mono': ['var(--font-primary)', 'monospace'],
       },
       fontSize: {
         '6.5xl': '3.25rem'
-      }
+      },
+      colors: {
+        'black': '#000000',
+        'black-700': '#101010',
+        'whtie': '#ffffff',
+        'blue': '#4299E1',
+      },
     },
   },
   plugins: [],

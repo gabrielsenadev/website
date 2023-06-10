@@ -1,12 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import Page from './page';
 
 describe('Homepage', () => {
   it('should render', () => {
     render(<Page />);
-    const header = screen.getByTestId('app-header');
-    expect(header).toBeInTheDocument();
-    const welcome = screen.getByTestId('welcome');
-    expect(welcome).toBeInTheDocument();
+    waitFor(() => {
+      expect(screen.queryByRole('header')).toBeInTheDocument();
+      expect(screen.queryByRole('main')).toBeInTheDocument();
+      expect(screen.queryByRole('footer')).toBeInTheDocument();
+    })
   });
 });

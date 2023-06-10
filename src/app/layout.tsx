@@ -1,18 +1,20 @@
 import { Analytics } from '@vercel/analytics/react';
-import { Roboto_Slab } from 'next/font/google';
+import { Source_Code_Pro } from 'next/font/google';
 
 import './globals.css';
-import { WELCOME } from '@/consts';
-const robotoSlab = Roboto_Slab({
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer';
+
+const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-primary',
-  display: 'swap',
+  display: 'auto',
 });
 
 export const metadata = {
   title: 'Gabriel Sena | Software Engineer',
-  description: WELCOME,
+  description: 'My portfolio and testing place, where I will make some great things.',
 }
 
 export default function RootLayout({
@@ -22,11 +24,13 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" className={`${robotoSlab.variable}`}>
+    <html lang="en" className={`${sourceCodePro.variable}`}>
       <body
-        className={`bg-gray-900 text-slate-50 bg-dark box-border flex flex-col items-center justify-center h-screen p-2`}
+        className={`bg-black text-white font-mono flex flex-col h-screen`}
       >
+        <Header />
         {children}
+        <Footer className="mt-auto p-2 sm:p-6" />
         <Analytics />
       </body>
     </html>
