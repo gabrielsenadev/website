@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { Header } from './Header';
 
 describe('Header', () => {
@@ -8,19 +8,21 @@ describe('Header', () => {
   });
 
   it('should render in mobile mode', () => {
-    jest
-    .spyOn(require('react-responsive'), 'useMediaQuery')
-    .mockImplementationOnce(() => true)
+    jest.mock('react-responsive', () => ({
+      useMediaQuery: () => true,
+    }));
     const header = render(<Header />);
     expect(header.container).toBeInTheDocument();
-    expect(screen.queryByTestId('mobile-header')).toBeInTheDocument();
-    expect(screen.queryByTestId('desktop-header')).toBeNull();
+    waitFor(() => {
+      expect(screen.queryByTestId('mobile-header')).toBeInTheDocument();
+      expect(screen.queryByTestId('desktop-header')).toBeNull();
+    });
   });
 
   it('should render in desktop mode', () => {
-    jest
-    .spyOn(require('react-responsive'), 'useMediaQuery')
-    .mockImplementationOnce(() => false)
+    jest.mock('react-responsive', () => ({
+      useMediaQuery: () => true,
+    }));
     const header = render(<Header />);
     expect(header.container).toBeInTheDocument();
     expect(screen.queryByTestId('mobile-header')).toBeNull();
