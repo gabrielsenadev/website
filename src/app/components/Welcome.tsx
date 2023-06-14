@@ -8,7 +8,7 @@ export function Welcome() {
       <Link className='underline underline-offset-4 hover:text-blue transition ease-in duration-200' href='mailto:hello@gabrielsena.dev'>
         Get in touch: hello@gabrielsena.dev
       </Link>
-      <h6 className='lowercase tracking-2x font-bold text-1xl mt-5'>for now, that is it!</h6>
+      <p className='lowercase tracking-2x font-bold text-1xl mt-5'>for now, that is it!</p>
     </main>
   )
 }
