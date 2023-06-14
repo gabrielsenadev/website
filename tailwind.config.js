@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        grayscaling: {
+          from: { filter: 'grayscale(0%)' },
+          to: { filter: 'grayscale(100%)' },
+        },
+      },
+      animation: {
+        grayscaling: 'grayscaling 10s ease 1',
+      },
       fontFamily: {
         'mono': ['var(--font-primary)', 'monospace'],
       },
