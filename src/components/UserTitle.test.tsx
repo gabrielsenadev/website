@@ -1,9 +1,12 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { UserTitle } from './UserTitle';
 
 describe('UserTitle', () => {
   it('should render', () => {
     const el = render(<UserTitle />);
     expect(el.container).toBeInTheDocument();
+    expect(screen.queryByAltText('gabriel sena github profile image')).toBeInTheDocument();
+    expect(screen.queryByText('Gabriel Sena')).toBeInTheDocument();
+    expect(screen.queryByText('Software Engineer')).toBeInTheDocument();
   });
 });
