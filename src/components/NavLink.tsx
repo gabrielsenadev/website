@@ -21,7 +21,8 @@ export function NavLink({ label, href, icon, altLabel, target }: NavLinkProps) {
       aria-label={altLabel}
     >
       { icon && cloneElement(icon, {
-        'data-testid': "icon-link"
+        'data-testid': "icon-link",
+        className: "text-xl"
       }) }
       { label && <span>{ label }</span> }
     </Link>
