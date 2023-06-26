@@ -19,7 +19,6 @@ export function UserTitle({ className }: UserTitleProps) {
         </div>
         <div>
           <p className="text-xl sm:text-2xl uppercase font-bold tracking-1x sm:tracking-2x">Gabriel Sena</p>
-          <p className="text-lg sm:text-1xl lowercase tracking-1x sm:tracking-2x">Software Engineer</p>
         </div>
       </div>
 

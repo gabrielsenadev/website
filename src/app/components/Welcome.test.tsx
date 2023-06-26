@@ -3,7 +3,7 @@ import { Welcome } from './Welcome';
 
 describe('Welcome', () => {
   it('should render', () => {
-    render(<Welcome />);
+    render(<Welcome showAboutButton/>);
     expect(screen.queryByRole('main')).toBeInTheDocument();
   });
 });

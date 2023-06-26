@@ -4,8 +4,8 @@ export function MainLinks() {
   return (
     <>
       <NavLink label="Home" href="/" />
-      <NavLink label="Posts" href="/posts" />
-      <NavLink label="Tests" href="/tests" />
+      <NavLink label="About" href="/about" />
+      <NavLink label="Articles" href="/articles" />
     </>
   )
 }

@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer';
 import { Metadata } from 'next';
+import { RouteView } from './components/RouteView';
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -56,8 +57,9 @@ export default function RootLayout({
         className={`bg-black text-white font-mono flex flex-col h-screen`}
       >
         <Header />
+        <RouteView />
         {children}
-        <Footer className="mt-auto p-2 sm:p-6" />
+        <Footer/>
         <Analytics />
       </body>
     </html>

@@ -7,6 +7,5 @@ describe('UserTitle', () => {
     expect(el.container).toBeInTheDocument();
     expect(screen.queryByAltText('gabriel sena github profile image')).toBeInTheDocument();
     expect(screen.queryByText('Gabriel Sena')).toBeInTheDocument();
-    expect(screen.queryByText('Software Engineer')).toBeInTheDocument();
   });
 });
