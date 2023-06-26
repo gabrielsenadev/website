@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-black-700 text-white p-6">
+    <footer className="bg-black-700 text-white p-2 sm:p-6">
       <div className="flex flex-col sm:flex-row justify-between">
         <div className="font-bold uppercase text-1xl">
           <p>Links</p>
@@ -25,12 +25,12 @@ export function Footer() {
         </nav>
       </div>
       <div className="mt-6">
-        <p>Copyright © 2023 Gabriel Sena. All rights reserved.</p>
         <p>Website developed with Next.js, Tailwind CSS, and other great tools. You can find its repository on <Link
           className="underline underline-offset-4 transition ease-in duration-200 hover:text-blue"
           href="https://github.com/gabrielsenadev/website"
           target="_blank"
         >GitHub.</Link></p>
+        <p>Copyright © 2023 Gabriel Sena. All rights reserved.</p>
       </div>
     </footer>
   )
