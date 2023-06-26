@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer';
 import { Metadata } from 'next';
+import { RouteView } from './components/RouteView';
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://gabrielsena.dev',
     title: 'Gabriel Sena | Software Engineer',
-    description: "Welcome to my portfolio and testing place! I'm Gabriel Sena, a Software Engineer. Explore a collection of projects and experiments crafted by me, showcasing my skills and expertise in software engineering.",
+    description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
     siteName: 'Portfolio and Experimental Place',
     images: [{
       url: 'https://res.cloudinary.com/gabes/image/upload/v1686425829/og.jpg',
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     site: 'https://gabrielsena.dev',
     creator: 'Gabriel Sena',
     images: 'https://res.cloudinary.com/gabes/image/upload/v1686425829/og.jpg',
-    description: "Welcome to my portfolio and testing place! I'm Gabriel Sena, a Software Engineer. Explore a collection of projects and experiments crafted by me, showcasing my skills and expertise in software engineering.",
+    description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
     title: 'Gabriel Sena | Software Engineer',
   }
 }
@@ -56,8 +57,9 @@ export default function RootLayout({
         className={`bg-black text-white font-mono flex flex-col h-screen`}
       >
         <Header />
+        <RouteView />
         {children}
-        <Footer className="mt-auto p-2 sm:p-6" />
+        <Footer/>
         <Analytics />
       </body>
     </html>
