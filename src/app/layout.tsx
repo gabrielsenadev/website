@@ -17,7 +17,7 @@ const sourceCodePro = Source_Code_Pro({
 export const metadata: Metadata = {
   metadataBase: new URL('https://gabrielsena.dev'),
   title: 'Gabriel Sena | Software Engineer',
-  description: "Welcome to my portfolio and testing place! I'm Gabriel Sena, a Software Engineer. Explore a collection of projects and experiments crafted by me, showcasing my skills and expertise in software engineering.",
+  description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
   applicationName: "Portfolio and Experimental Place",
   authors: { name: 'Gabriel Sena', url: 'https://github.com/gabrielsenadev' },
   generator: 'Next.js',
