@@ -1,10 +1,14 @@
+'use client';
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface UserTitleProps {
   className?: string;
 }
 
 export function UserTitle({ className }: UserTitleProps) {
+  const pathname = usePathname();
   return (
     <div className={className}>
       <div className="flex flex-row items-center">
@@ -17,8 +21,8 @@ export function UserTitle({ className }: UserTitleProps) {
             className="rounded-full"
           />
         </div>
-        <div>
-          <p className="text-xl sm:text-2xl uppercase font-bold tracking-1x sm:tracking-2x">Gabriel Sena</p>
+        <div className="flex items-end">
+          <p className="text-lg uppercase font-bold tracking-1x sm:tracking-2x">Gabriel Sena</p><span className="text-base">{pathname}</span>
         </div>
       </div>
 
