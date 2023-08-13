@@ -21,7 +21,7 @@ export function UserTitle({ className }: UserTitleProps) {
             className="rounded-full"
           />
         </div>
-        <div className="flex">
+        <div className="flex items-end">
           <p className="text-lg uppercase font-bold tracking-1x sm:tracking-2x">Gabriel Sena</p><span className="text-base">{pathname}</span>
         </div>
       </div>
