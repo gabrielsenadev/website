@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import { ReactElement, cloneElement } from 'react';
 import { usePathname } from 'next/navigation'

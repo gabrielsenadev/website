@@ -1,3 +1,4 @@
+import { ExternalLinks } from "@/components/Navigation/ExternalLinks";
 import Link from "next/link";
 
 export default function Page() {
@@ -11,6 +12,9 @@ export default function Page() {
           className='underline underline-offset-4 hover:text-blue transition ease-in duration-200' href='mailto:hello@gabrielsena.dev'>
           hello@gabrielsena.dev
         </Link> or social medias, feel free to contact me anytime.</p>
+        <div className="[&>*]:text-3xl flex justify-start list-none space-x-6 my-10">
+            <ExternalLinks />
+          </div>
       </div>
     </div>
   )
