@@ -23,7 +23,7 @@ export function Drawer({ children, isOpen, toggle }: DrawerProps) {
       }`}
       data-testid="drawer-container"
     >
-      <div className="p-8 flex flex-col">
+      <div className="p-8 flex flex-col text-white">
         <FiX className="self-end text-3xl cursor-pointer hover:text-blue" role="button" aria-label="close drawer" onClick={toggle}/>
         {children}
       </div>

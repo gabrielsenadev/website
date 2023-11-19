@@ -3,7 +3,6 @@ import { Source_Code_Pro } from 'next/font/google';
 
 import './globals.css';
 import { Header } from './components/Header/Header';
-import { Footer } from './components/Footer';
 import { Metadata } from 'next';
 
 const sourceCodePro = Source_Code_Pro({
@@ -16,7 +15,7 @@ const sourceCodePro = Source_Code_Pro({
 export const metadata: Metadata = {
   metadataBase: new URL('https://gabrielsena.dev'),
   title: 'Gabriel Sena | Software Engineer',
-  description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
+  description: "Hello, I'm Gabriel Sena, a software engineer.",
   applicationName: "Portfolio and Experimental Place",
   authors: { name: 'Gabriel Sena', url: 'https://github.com/gabrielsenadev' },
   generator: 'Next.js',
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://gabrielsena.dev',
     title: 'Gabriel Sena | Software Engineer',
-    description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
+    description: "Hello, I'm Gabriel Sena, a software engineer.",
     siteName: 'Portfolio and Experimental Place',
     images: [{
       url: 'https://res.cloudinary.com/gabes/image/upload/v1686425829/og.jpg',
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     site: 'https://gabrielsena.dev',
     creator: 'Gabriel Sena',
     images: 'https://res.cloudinary.com/gabes/image/upload/v1686425829/og.jpg',
-    description: "Hello, I'm Gabriel Sena, a software engineer specializing in web development. I have a passion for constantly seeking evolution and improvement in every project I undertake.",
+    description: "Hello, I'm Gabriel Sena, a software engineer.",
     title: 'Gabriel Sena | Software Engineer',
   }
 }
@@ -53,11 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sourceCodePro.variable}`}>
       <body
-        className={`bg-black text-white font-mono flex flex-col h-screen`}
+        className={`bg-white dark:bg-black dark:text-white text-black font-mono flex flex-col h-screen`}
       >
         <Header />
         {children}
-        <Footer/>
         <Analytics />
       </body>
     </html>

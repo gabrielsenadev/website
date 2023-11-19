@@ -20,7 +20,8 @@ module.exports = {
         'mono': ['var(--font-primary)', 'monospace'],
       },
       fontSize: {
-        '6.5xl': '3.25rem'
+        '6.5xl': '3.25rem',
+        '2.5xl': '2rem',
       },
       colors: {
         'black': '#000000',

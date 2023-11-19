@@ -1,6 +1,5 @@
 import { UserTitle } from "@components/UserTitle";
 import { MainLinks } from "@components/Navigation/MainLinks";
-import { ExternalLinks } from "@components/Navigation/ExternalLinks";
 import Link from "next/link";
 
 export function DesktopHeader() {
@@ -10,9 +9,8 @@ export function DesktopHeader() {
         <UserTitle />
       </Link>
       <div className="[&>*]:mx-4 flex flex-row-reverse justify-start list-none">
-        <nav className="flex justify-center list-none space-x-6 uppercase">
+        <nav className="flex justify-center list-none space-x-6">
           <MainLinks />
-          <ExternalLinks />
         </nav>
       </div>
     </header>
