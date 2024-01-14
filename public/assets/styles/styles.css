@@ -1,0 +1,125 @@
+:root {
+  --primary-font: "IBM Plex Mono", monospace;
+  --background-color: #000;
+  --text-color: #fff;
+  --text-color-transparentize-1: rgba(255, 255, 255, 0.95);
+  --text-color-transparentize-2: rgba(255, 255, 255, 0.85);
+  --highlight-color: #4299e1;
+}
+
+/* Generics */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  color: var(--text-color);
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  padding: 0 2svw;
+  display: flex;
+  flex-direction: column;
+}
+
+li:hover a {
+  color: var(--highlight-color);
+}
+
+/* Main header */
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#heading .title {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#heading .title img {
+  border-radius: 60px;
+  width: 60px;
+  max-height: 60px;
+}
+
+#heading nav li a {
+  color: var(--highlight-color);
+}
+
+/* Page Content */
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color-transparentize-2);
+  font-weight: 700;
+}
+
+.welcome-name {
+  color: var(--text-color-transparentize-1);
+  font-weight: 700;
+}
+
+.welcome-career {
+  display: block;
+  text-transform: lowercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.social-links  {
+  margin-top: 10px;
+  row-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social-link {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.social-link .icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
