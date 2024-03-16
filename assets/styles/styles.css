@@ -1,10 +1,10 @@
 :root {
   --primary-font: "IBM Plex Mono", monospace;
-  --background-color: #000;
+  --background-color: #0A0A0A;
   --text-color: #fff;
   --text-color-transparentize-1: rgba(255, 255, 255, 0.95);
   --text-color-transparentize-2: rgba(255, 255, 255, 0.85);
-  --highlight-color: #4299e1;
+  --highlight-color: #F8F7FF;
 }
 
 /* Generics */
@@ -64,6 +64,7 @@ li:hover a {
 
 #heading nav li a {
   color: var(--highlight-color);
+  text-decoration: none;
 }
 
 /* Page Content */
@@ -104,7 +105,7 @@ li:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .social-link {
@@ -112,10 +113,25 @@ li:hover a {
   display: flex;
   align-items: center;
   column-gap: 5px;
+  background-color: #121212;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+}
+
+.social-link:hover {
+  background-color: #292929;
+}
+
+.social-link a {
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .social-link .icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 600px) {
